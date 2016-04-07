@@ -1,0 +1,15 @@
+// Use Compass
+@import "compass"
+@import "normalize"
+@import "susy"
+@import "breakpoint"
+
++normalize
+@import 'main'
+$susy : (columns: 12, container: 1200px, global-box-sizing: border-box, debug: (image: show-columns))
+
++border-box-sizing
+.wrap
+  +container(90%)
+img
+  max-width: 100%

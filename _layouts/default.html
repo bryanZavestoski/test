@@ -1,20 +1,14 @@
 <!DOCTYPE html>
-<!--[if lt IE 7]><html class="no-js lt-ie9 lt-ie8 lt-ie7"><![endif]-->
-<!--[if IE 7]><html class="no-js lt-ie9 lt-ie8" <![endif]-->
-<!--[if IE 8]><html class="no-js lt-ie9" <![endif]-->
-<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
-<head>
-  <link rel="stylesheet" type="text/css" href="{{ site.github.url }}/assets/css/style.css">
-</head>
-<body>
+  {% include head.html %}
+  <body>
 
-   <div class="content">
-      <div class="container">
-         {{ content }}
-      </div>
-   </div><!-- end .content -->
+     <div class="content">
+        <div class="container">
+           {{ content }}
+        </div>
+     </div>
 
-
-</body>
+    {% if site.google_analytics %} {% include google_analytics.html %} {% endif %}
+  </body>
 
 </html>
